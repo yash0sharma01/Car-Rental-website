@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental Service</title>
+    <link rel="stylesheet" href="style1.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1> Car Rental </h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="about_cars.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login_rental.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ECONOMY CARS -->
+        <h2>ECONOMY CARS</h2>
+        <div class="car-list">
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="Xuv300.webp" alt="Xuv_300">
+                <h3> Xuv 300</h3>
+                <p>Price: 2000/Hourly</p>
+                <button onclick="openBookingForm('Xuv 300', 2000)">Book Now</button>
+            </div>
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="Verna.jpg" alt=" Verna ">
+                <h3> Verna </h3>
+                <p>Price: 2000/Hourly</p>
+                <button onclick="openBookingForm('Verna', 2000)">Book Now</button>
+            </div>
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="wagonR.jpg" alt="Brezza">
+                <h3> Wagon R</h3>
+                <p>Price: 2000/Hourly</p>
+                <button onclick="openBookingForm(' Wagon R ', 2000)">Book Now</button>
+            </div>
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="Brezza.jpg" alt="Brezza">
+                <h3>Brezza</h3>
+                <p>Price: 2000/Hourly</p>
+                <button onclick="openBookingForm( 'Brazza', 2000)">Book Now</button>
+            </div>
+
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="baleno.jpg" alt="Baleno">
+                <h3>Baleno</h3>
+                <p>Price: 1500/Hourly</p>
+                <button onclick="openBookingForm('Baleno', 1500)">Book Now</button>
+            </div>
+
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="maruti_ertiga.jpg" alt="Ertiga">
+                <h3>Ertiga</h3>
+                <p>Price: 2200/Hourly</p>
+                <button onclick="openBookingForm('Ertiga' , 2200)">Book Now</button>
+            </div>
+
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="maruti_swift.jpg" alt="Maruti Swift">
+                <h3>Maruti Swift</h3>
+                <p>Price: 1920/Hourly</p>
+                <button onclick="openBookingForm(' Maruti Swift ', 1920)">Book Now</button>
+            </div>
+        </div>
+
+        <!-- SPORTS CARS -->
+        <h2>SPORTS CARS</h2>
+        <div class="car-list">
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="lamborghini_LP670-4.jpg" alt="Lamborghini LP670-4">
+                <h3>Lamborghini LP670-4</h3>
+                <p>Price: 15000/Hourly</p>
+                <button onclick="window.open('https://www.carwale.com/lamborghini-cars/temerario/', '_blank')">Book Now</button>
+            </div>
+
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="McLaren_720S.jpg" alt="McLaren 720s">
+                <h3>McLaren 720s</h3>
+                <p>Price: 18500/Hourly</p>
+                <button onclick="window.open('https://www.carwale.com/mclaren-cars/750s/', '_blank')">Book Now</button>
+            </div>
+
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="mercedes_AMG.jpg" alt="Mercedes AMG">
+                <h3>Mercedes AMG</h3>
+                <p>Price: 15200/Hourly</p>
+                <button onclick="window.open('https://www.carwale.com/mercedes-benz-cars/amg-glc43-coupe/', '_blank')">Book Now</button>
+            </div>
+
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="range_rover.jpg" alt="Range Rover">
+                <h3>Range Rover</h3>
+                <p>Price: 11920/Hourly</p>
+                <button onclick="window.open('https://www.carwale.com/land-rover-cars/', '_blank')">Book Now</button>
+            </div>
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="Rolls_Royce.jpg" alt=" Rolls Royce">
+                <h3> Rolls_Royce</h3>
+                <p>Price: 20020/Hourly</p>
+                <button onclick="window.open('https://www.rolls-roycemotorcars.com/en_GB/showroom/black-badge.html', '_blank')">Book Now</button>
+            </div>
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="Audi.jpg" alt=" Audi ">
+                <h3> Audi </h3>
+                <p>Price: 12820/Hourly</p>
+                <button onclick="window.open('https://www.carwale.com/audi-cars/', '_blank')">Book Now</button>
+            </div>
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="BMW.jpg" alt=" BMW ">
+                <h3> BMW </h3>
+                <p>Price: 12099/Hourly</p>
+                <button onclick="window.open('https://www.carwale.com/bmw-cars/', '_blank')">Book Now</button>
+            </div>
+        </div>
+
+        <!-- SUV CARS -->
+        <h2>SUV CARS</h2>
+        <div class="car-list">
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="infiniti_QX60.jpg" alt="Infiniti QX60">
+                <h3>Infiniti QX60</h3>
+                <p>Price: 10990/Hourly</p>
+                <button onclick="window.open('https://www.infiniti.com/vehicles/qx60.html', '_blank')">Book Now</button>
+            </div>
+
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="jeep_wrangler.jpg" alt="Jeep Wrangler">
+                <h3>Jeep Wrangler</h3>
+                <p>Price: 10000/Hourly</p>
+                <button onclick="window.open('https://www.jeep-india.com/wrangler-jl.html', '_blank')">Book Now</button>
+            </div>
+
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="mahindra_thar.jpg" alt="Mahindra Thar">
+                <h3>Mahindra Thar</h3>
+                <p>Price: 9111/Hourly</p>
+                <button onclick="window.open('https://auto.mahindra.com/suv/thar/THRN.html', '_blank')">Book Now</button>
+            </div>
+
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="Bentlay.jpg" alt="Bentley">
+                <h3>Bentley</h3>
+                <p>Price: 5299/Hourly</p>
+                <button onclick="window.open('https://www.cardekho.com/cars/Bentley', '_blank')">Book Now</button>
+            </div>
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="fotuner.jpg" alt=" Tayota Fortuner ">
+                <h3> Tayota Fortuner </h3>
+                <p>Price: 8099/Hourly </p>
+                <button onclick="window.open('https://www.carwale.com/toyota-cars/fortuner/', '_blank')">Book Now</button>
+            </div>
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="XUV_700.jpg" alt=" Mahindra XUV 700">
+                <h3> Mahindra XUV 700 </h3>
+                <p>Price: 3099/Hourly </p>
+                <button onclick="window.open('https://www.carwale.com/mahindra-cars/xuv700/', '_blank')">Book Now</button>
+            </div>
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="Tata_Safari.jpg" alt=" Tata Safari">
+                <h3> Tata Safari </h3>
+                <p>Price: 3099/Hourly </p>
+                <button onclick="window.open('https://www.carwale.com/tata-cars/safari/', '_blank')">Book Now</button>
+            </div>
+        </div>
+        <!-- Travel Vans -->
+        <h2> TRAVEL VANS </h2>
+        <div class="car-list">
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="toyota_Hiace.jpg" alt=" Toyota Hiace">
+                <h3> Tayota Hiace</h3>
+                <p>Price: 990/Hourly</p>
+                <button onclick="window.open('https://www.cardekho.com/toyota/hiace', '_blank')">Book Now</button>
+            </div>
+
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="Tata_winger.jpg" alt=" Tata Winger ">
+                <h3> Tata Winger</h3>
+                <p>Price: 1000/Hourly</p>
+                <button onclick="window.open('https://buses.cardekho.com/buses/tata/winger-staff', '_blank')">Book Now</button>
+            </div>
+
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="Force_urbaina.jpg" alt=" Force Urbaina">
+                <h3> Force Urbaina </h3>
+                <p>Price: 1111/Hourly</p>
+                <button onclick="window.open('https://www.cardekho.com/force/urbania', '_blank')">Book Now</button>
+            </div>
+
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="Volvo_minibus.jpg" alt=" Volvo Minibus ">
+                <h3> Volvo Minibus</h3>
+                <p>Price: 1299/Hourly</p>
+                <button onclick="window.open('https://www.volvobuses.com/in/', '_blank')">Book Now</button>
+            </div>
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="Force_mono_bus.jpg" alt=" Force Mono Bus">
+                <h3> Force mono bus </h3>
+                <p>Price: 3099/Hourly </p>
+                <button onclick="window.open('https://www.carwale.com/toyota-cars/fortuner/', '_blank')">Book Now</button>
+            </div>
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="Volvo_9900.jpg" alt=" Volvo Premium Bus">
+                <h3> Volvo Premium Bus </h3>
+                <p>Price: 999/Hourly </p>
+                <button onclick="window.open('https://www.carwale.com/mahindra-cars/xuv700/', '_blank')">Book Now</button>
+            </div>
+            <div class="car" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+                <img src="Ev_bus.jpg" alt=" Tata EV">
+                <h3> Tata EV BUS </h3>
+                <p>Price: 99/Hourly </p>
+                <button onclick="" openBookingForm( ' Tata EV Bus', 1920) "">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Add more car sections as needed -->
+
+        <!-- Booking Form -->
+        <div class="overlay" id="overlay"></div>
+        <div class="booking-form" id="bookingForm">
+            <h2>Booking Form</h2>
+            <form id="form">
+                <label for="carName">Car Name:</label>
+                <input type="text" id="carName" name="carName" readonly />
+                <label for="price">Price:</label>
+                <input type="text" id="price" name="price" readonly />
+                <label for="customerName">Your Name:</label>
+                <input type="text" id="customerName" name="customerName" required />
+                <label for="customerEmail">Your Email:</label>
+                <input type="email" id="customerEmail" name="customerEmail" required />
+                <button type="submit">Submit Booking</button>
+                <button type="button" onclick="closeBookingForm()">Cancel</button>
+            </form>
+        </div>
+
+    </main>
+
+    <script>
+        function openBookingForm(carName, price) {
+            document.getElementById('carName').value = carName;
+            document.getElementById('price').value = price;
+            document.getElementById('bookingForm').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function closeBookingForm() {
+            document.getElementById('bookingForm').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+        // Optional: Handle form submission
+        document.getElementById('form').onsubmit = function(event) {
+            event.preventDefault(); // Prevent default form submission
+            alert('Booking submitted for ' + document.getElementById('carName').value);
+            closeBookingForm(); // Close the form after submission
+        };
+    </script>
+</body>
+
+</html>

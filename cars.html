@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Car Images Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(to right, #fefcea, #f1da36);
+            /* Soft gold gradient */
+            color: #333;
+            line-height: 1.6;
+            padding: 0 20px;
+            transition: background 0.3s ease;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        /* Header with background image */
+        
+        header {
+            background: #006d77;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            color: white;
+            /* Set the font color to white */
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            position: relative;
+        }
+        
+        nav ul li a::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #f1c40f;
+            left: 0;
+            bottom: -5px;
+            transition: 0.3s;
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        /* Center the heading */
+        
+        h1 {
+            text-align: center;
+            margin: 40px 0 30px;
+            font-size: 2rem;
+            color: #2c3e50;
+        }
+        /* Gallery layout */
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto 60px;
+        }
+        
+        .gallery-item {
+            background: rgb(254, 252, 252);
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 350px;
+            text-align: center;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .caption {
+            padding: 0px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        body::after {
+            content: "";
+            display: block;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Car Rental</h1>
+        <nav>
+            <ul>
+                <li><a href="e-commerce.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="about_cars.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login_rental.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Car Images Gallery</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="Bentlay.jpg" alt="Bentlay Car" />
+            <div class="caption">Bentlay</div>
+        </div>
+        <div class="gallery-item">
+            <img src="jeep_wrangler.jpg" alt="Jeep Wrangler" />
+            <div class="caption">Jeep Wrangler</div>
+        </div>
+        <div class="gallery-item">
+            <img src="lamborghini_LP670-4.jpg" alt="Lamborghini LP670-4" />
+            <div class="caption">Lamborghini LP670-4</div>
+        </div>
+        <div class="gallery-item">
+            <img src="mahindra_thar_4x4.jpg" alt="Mahindra Thar 4x4" />
+            <div class="caption">Mahindra Thar 4x4</div>
+        </div>
+        <div class="gallery-item">
+            <img src="mahindra_thar.jpg" alt="Mahindra Thar" />
+            <div class="caption">Mahindra Thar</div>
+        </div>
+        <div class="gallery-item">
+            <img src="McLaren_720s.jpg" alt="McLaren 650s" />
+            <div class="caption">McLaren 650s</div>
+        </div>
+        <div class="gallery-item">
+            <img src="mercedes_AMG-GT.jpg" alt="Mercedes AMG GT" />
+            <div class="caption">Mercedes AMG GT</div>
+        </div>
+        <div class="gallery-item">
+            <img src="mercedes_AMG.jpg" alt="Mercedes AMG" />
+            <div class="caption">Mercedes AMG</div>
+        </div>
+        <div class="gallery-item">
+            <img src="range_rover.jpg" alt="Range Rover" />
+            <div class="caption">Range Rover</div>
+        </div>
+        <div class="gallery-item">
+            <img src="infiniti_QX60.jpg" alt="Infiniti QX60" />
+            <div class="caption">Infiniti QX60</div>
+        </div>
+        <div class="gallery-item">
+            <img src="Brezza.jpg" alt="Vitara Brezza" />
+            <div class="caption">Brezza</div>
+        </div>
+        <div class="gallery-item">
+            <img src="baleno.jpg" alt=" Baleno " />
+            <div class="caption"> Baleno </div>
+        </div>
+        <div class="gallery-item">
+            <img src="maruti_ertiga.jpg" alt=" Ertiga " />
+            <div class="caption"> Ertiga </div>
+        </div>
+        <div class="gallery-item">
+            <img src="maruti_swift.jpg" alt=" Maruti Swift " />
+            <div class="caption"> Maruti Swift</div>
+        </div>
+        <div class="gallery-item">
+            <img src="wagonR.jpg" alt=" Wagon R " />
+            <div class="caption"> Wagon R</div>
+        </div>
+        <div class="gallery-item">
+            <img src="tata_ev.jpg" alt=" Tata EV " />
+            <div class="caption"> Tata EV</div>
+        </div>
+        <div class="gallery-item">
+            <img src="tata_nexon.jpg" alt=" Tata Nexon " />
+            <div class="caption"> Tata Nexon </div>
+        </div>
+        <div class="gallery-item">
+            <img src="fotuner.jpg" alt=" Tayota Fortuner " />
+            <div class="caption"> Tayota Fortuner </div>
+        </div>
+        <div class="gallery-item">
+            <img src="tata_Safari.jpg" alt=" Tata Safari " />
+            <div class="caption"> Tata Safari </div>
+        </div>
+        <div class="gallery-item">
+            <img src="XUV_700.jpg" alt=" Mahindra XUV 700 " />
+            <div class="caption"> Mahindra XUV_700 </div>
+        </div>
+        <div class="gallery-item">
+            <img src="BMW.jpg" alt=" BMW " />
+            <div class="caption"> BMW </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Rolls_Royce.jpg" alt=" Rolls Royce " />
+            <div class="caption"> Rolls_Royce </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Audi.jpg" alt=" Audi " />
+            <div class="caption"> Audi </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Verna.jpg" alt=" Verna " />
+            <div class="caption"> Verna </div>
+        </div>
+        <div class="gallery-item">
+            <img src="toyota_Hiace.jpg" alt=" Tayota Hiace " />
+            <div class="caption"> Tayota Hiace </div>
+        </div>
+        <div class="gallery-item">
+            <img src=" Tata_winger.jpg" alt=" Tata Winger " />
+            <div class="caption"> Tata Winger </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Force_urbaina.jpg" alt=" Force_urbania " />
+            <div class="caption"> Force Urbania </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Volvo_minibus.jpg" alt=" Volvo minibus " />
+            <div class="caption"> Volvo Minibus </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Ev_bus.jpg" alt=" Tata Ev bus " />
+            <div class="caption"> TATA EV BUS </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Force_mono_bus.jpg" alt=" Force Bus " />
+            <div class="caption"> Force Bus </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Volvo_9900.jpg" alt=" Volvo Premium bus " />
+            <div class="caption"> Volvo Premium Bus </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Volvo_minibus.jpg" alt=" Volvo Mini Bus " />
+            <div class="caption"> Volvo Mini Bus </div>
+        </div>
+    </div>
+</body>
+
+</html>

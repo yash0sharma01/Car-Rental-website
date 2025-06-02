@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Yash Car Rental</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(to right, #fefcea, #f1da36);
+            /* Soft gold gradient */
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            background-color: #006d77;
+            /* Previous header color */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: #f1c40f;
+        }
+        
+        .main-wrapper {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        
+        .login-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .input-group {
+            margin-bottom: 1rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+        
+        input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        
+        input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        
+        .btn {
+            width: 100%;
+            padding: 0.75rem;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+        
+        .btn:hover {
+            background: #0056b3;
+        }
+        
+        .register-link {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .register-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Car Rental </h1>
+        <nav>
+            <ul>
+                <li><a href="e-commerce.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="about_cars.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login_rental.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-wrapper">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form>
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required />
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required />
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p class="register-link">Don't have an account? <a href="register.html">Register here</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
